@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
   const [error, setError] = useState('');
 
   // Backend API URL - FIXED
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://glam-gadgets-backend.onrender.com/api';
 
   // Check for stored user on app start
   useEffect(() => {
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
       console.log('📝 Data:', { name, email, password: '***' });
       
       // FIXED: Use absolute URL with correct port
-      const API_URL = 'http://localhost:5000/api';
+      const API_URL = 'https://glam-gadgets-backend.onrender.com/api';
       console.log('🔗 URL:', `${API_URL}/users/register`);
       
       const response = await fetch(`${API_URL}/users/register`, {
