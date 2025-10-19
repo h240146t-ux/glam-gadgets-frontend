@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://glam-gadgets-backend.onrender.com/api';
 
 // Generic API request function
 const apiRequest = async (endpoint, options = {}) => {
